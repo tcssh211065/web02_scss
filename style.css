@@ -1,131 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Noto Serif TC", serif;
+header {
+  background-color: #c4c4c4;
+  padding: 1rem;
 }
-#curve_chart{
-    width: 40vw;
-    height: 50vh;
+header h1 {
+  font-size: 2.5rem;
 }
-@media (max-width: 660px) {
-    #curve_chart{
-        width: 80vw;
-        height: 30vh;
-    }
+header h1 i {
+  font-size: 3rem;
 }
 
-header{
-    background-color:#c4c4c4;
-    padding:1rem;
+nav {
+  background-color: #312f2f;
 }
-header h1{
-    font-size: 2.5rem;
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 1rem;
 }
-header h1 i{
-    font-size: 3rem;
+nav ul li {
+  padding: 0.5rem 0.75rem;
 }
-nav{
-    background-color:#312f2f;
+nav ul li a {
+  color: #c4c4c4;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    padding-left:1rem;
+nav ul li a:hover {
+  color: #6cf6cf;
+}
+nav ul li a i {
+  font-size: 1.5rem;
 }
 
-nav ul li{
-    padding:0.5rem 0.75rem;
+section #curve_chart {
+  width: 40vw;
+  height: 50vh;
 }
-nav ul li a{
-    color: #c4c4c4;
-    text-decoration: none;
-    font-size: 1.2rem;
+section.container div h2 {
+  display: block;
+  border-bottom: 2px solid black;
+  padding: 0.5rem;
 }
-nav ul li a i{
-    font-size: 1.5rem;
+section.container div img {
+  padding-top: 1rem;
+  width: 75dvw;
 }
+section.container div.content {
+  border: 1px solid black;
+}
+section.mid {
+  padding-bottom: 3rem;
+}
+section.up {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+section.right {
+  padding: 2rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.right h5 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+section.right iframe {
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+section.right div p {
+  font-size: 1.5rem;
+  color: red;
+}
+section.right div ul .links1 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section.right div ul .links2 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section.left {
+  padding: 2rem;
+  flex-grow: 4;
+  flex-shrink: 1;
+  flex-basis: 350px;
+  width: 55dvw;
+  float: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+.content {
+  display: block;
+  width: 75dvw;
+  padding: 1rem;
+  align-items: center;
+}
+
 @media (max-width: 480px) {
-    nav ul{
-        flex-wrap: wrap;
-    }
-    nav ul li{
-        padding:0.15rem 0.5rem;
-    }
-    nav ul li a{
-        font-size: 1rem;
-    }
-}
-
-
-section.container{
-    display: flex;
-    width: 100%;
+  nav ul {
     flex-wrap: wrap;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  }
+  nav ul li {
+    padding: 0.15rem 0.5rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
 }
-section.left{
-    padding:2rem;
-    flex-grow: 4;
-    flex-shrink: 1;
-    flex-basis: 350px;
+form {
+  padding-left: 1rem;
 }
-section.right{
-    padding:2rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-section.right h5{
-    font-size: 1.5rem;
-    text-align: center;
-    
-}
-section.right iframe{
-    border: 2px solid blue;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px
-}
-section.container div h2{
-    display: block;
-    border-bottom:2px solid black ;
-    padding: 0.5rem;
-}
-.content{
-    display: block;
-    width: 75dvw;
-    padding:1rem;
-    align-items: center;
 
-}
-section.container div img{
-    padding-top: 1rem;
-    width: 75dvw;
-}
-section.up{
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-}
-section.mid{
-    padding-bottom: 3rem;
-}
-form{
-    padding-left: 1rem;
-}
-.footer{
-    text-align: center;
-    padding: 1rem;
-    background-color: lightgrey;
-    width: 100%;
-}
-section.container div.content{
-    border:1px solid black;
-}
-/* section.container div.intro{
-    border:1px solid black;
-} */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: lightgrey;
+  width: 100%;
+}/*# sourceMappingURL=style-20260612.css.map */
