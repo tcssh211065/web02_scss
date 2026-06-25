@@ -1,0 +1,29 @@
+﻿$themeColor: #6cf6cf !default;
+
+nav {
+    background-color: #312f2f;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding-left: 1rem;
+
+        li {
+            padding: 0.5rem 0.75rem;
+
+            a {
+                color: #c4c4c4;
+                text-decoration: none;
+                font-size: 1.2rem;
+
+                &:hover {
+                    color:$themeColor;
+                }
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

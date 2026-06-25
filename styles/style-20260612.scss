@@ -1,0 +1,51 @@
+$themeColor: #6cf6cf;
+
+@use "header";
+@use "nav" with ($themeColor: $themeColor);
+@use "section";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif TC", serif;
+}
+.content{
+    display: block;
+    width: 75dvw;
+    padding:1rem;
+    align-items: center;
+
+}
+
+@media (max-width: 480px) {
+    nav {
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                padding: 0.15rem 0.5rem;
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+
+form{
+    padding-left: 1rem;
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: lightgrey;
+    width: 100%;
+}
